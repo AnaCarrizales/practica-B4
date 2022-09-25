@@ -1,0 +1,12 @@
+p {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo-marca {
+    width: 250px;
+    align-items: center;
+}
