@@ -6,7 +6,17 @@ ul {
     list-style: none;
 }
 
-.logo-marca {
-    width: 250px;
-    align-items: center;
+.logo {
+    background: #fff;
+    width: 120px;
+    height: max-content;
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    margin: 0 0 0 5px;
+}
+
+.marca {
+    margin-left: 7.5px;
 }
