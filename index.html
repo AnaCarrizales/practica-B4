@@ -10,58 +10,151 @@
     <link rel="stylesheet" href="./public/style.css">
 
     <title>MARCA - Diario online líder en información deportiva</title>
-    <link rel="shortcut icon" href="./public/icono.png">
+    <link rel="shortcut icon" href="./public/ico/icono.png">
   </head>
   <body>
-    <div class="container-fluid" style="background-color:#cc0000;">
-      <!-- Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light" >
-          <div class="logo">
-            <a class="navbar-brand" href="#"><img class="marca" src="./public/1200px-Marca.svg.png" alt="marca" height="35px"></a>
+    <!-- HEADER-->
+    <header> 
+      <div class="container-fluid">
+        <!-- Nav -->
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top scroll" style="background-color:#cc0000;">
+          <div class="container-fluid">
+              <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+                  <ul class="navbar-nav nav-fill">
+                      <li class="nav-item">
+                          <a class="nav-link pl-0" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="logo"> <!--Logo-->
+                <a class="navbar-brand" href="#"><img class="marca" src="./public/ico/1200px-Marca.svg.png" alt="marca" height="35px"></a>
+              </div>
+              <div class="navbar-collapse collapse dual-nav w-50 order-2" >
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-twitter"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+              
+            <div class="d-flex justify-content-end">
+                <!-- RADIO-MARCA-BTN -->
+                <button class="navbar-toggler custom-toggler" style="padding-left: 5.5px; padding-right: 5.5px; margin-top: 10px;" type="button">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="27" viewBox="0 0 40 27" role="img" aria-hidden="true"><g fill="none" fill-rule="evenodd"><path fill="#005CBD" d="M0 0H40V9.949H0z"></path><path fill="#FFF" d="M0 9.949H40V26.192999999999998H0z"></path><path fill="#005CBD" d="M0 26.193L0 24.162 20.609 25.178 40 24.162 40 26.193z"></path><path fill="#FFF" d="M31.039 1.93c.46 0 .891.071 1.287.213.396.142.742.348 1.038.621.295.273.529.611.698 1.017.168.403.253.868.253 1.393 0 .524-.084.991-.248 1.399-.15.385-.384.733-.687 1.02-.298.276-.65.487-1.037.62-.4.143-.833.213-1.302.213-.468 0-.902-.071-1.302-.216-.386-.137-.738-.353-1.032-.632-.288-.275-.516-.616-.681-1.02-.165-.403-.251-.865-.251-1.384 0-.526.084-.99.254-1.393.168-.406.398-.744.691-1.017.293-.273.635-.479 1.031-.621.413-.145.849-.218 1.288-.214zm-21.882.142c.951 0 1.666.195 2.148.585.482.39.724.921.724 1.586 0 .419-.11.773-.331 1.07-.22.297-.482.527-.786.687.248.33.493.64.734.93.24.29.43.554.568.79-.058.21-.192.393-.377.516-.181.119-.395.182-.614.18-.152 0-.282-.017-.393-.05-.103-.03-.201-.078-.288-.14-.086-.061-.164-.136-.228-.22-.072-.088-.137-.18-.197-.277L9.25 6.384h-.547v1.944c-.076.02-.194.04-.357.06-.162.02-.321.03-.48.03-.158 0-.298-.012-.419-.035-.109-.02-.21-.062-.3-.127-.083-.066-.145-.153-.18-.253-.047-.135-.068-.279-.063-.424V2.82c0-.141.04-.251.12-.33.092-.084.204-.148.326-.185.234-.082.506-.14.815-.177.31-.038.641-.056.992-.056zm17.111.079c.159 0 .298.014.42.037.108.02.212.063.303.126.086.066.15.153.187.253.042.109.062.25.062.425v5.335c-.076.02-.196.04-.356.06-.161.02-.323.03-.481.03-.16 0-.298-.012-.418-.035-.11-.02-.213-.063-.304-.127-.087-.064-.151-.152-.187-.253-.046-.135-.067-.279-.062-.424V2.245c.076-.015.198-.032.362-.057.166-.022.324-.037.474-.037zM15.53 2.073c.345 0 .65.05.914.147.266.097.436.25.512.46.123.35.259.756.404 1.222.298.965.583 1.932.855 2.904.139.48.26.908.364 1.278-.103.107-.231.185-.373.228-.19.062-.389.09-.588.086-.14.003-.281-.01-.419-.041-.1-.021-.195-.062-.278-.12-.075-.058-.136-.13-.177-.213-.048-.099-.088-.2-.118-.303l-.186-.698h-1.87c-.056.203-.11.411-.165.628-.054.209-.11.417-.165.625-.222.084-.457.125-.693.12-.352 0-.612-.058-.78-.176-.165-.11-.26-.295-.253-.49 0-.094.013-.19.042-.284.027-.093.058-.206.092-.334.048-.182.116-.406.202-.676.086-.27.18-.561.283-.875.104-.313.214-.635.331-.964l.33-.934c.152-.439.315-.875.485-1.308.168-.086.346-.15.532-.19.239-.062.477-.092.72-.092zm5.713-.122c.538 0 1.025.062 1.461.192.437.127.813.324 1.128.59.312.265.555.6.727 1.002.172.406.258.884.258 1.435 0 .538-.083 1.007-.248 1.408-.165.4-.402.736-.707 1.007-.318.28-.694.488-1.1.611-.43.134-.902.2-1.418.2h-.402c-.152 0-.307-.01-.471-.03-.163-.02-.323-.045-.484-.075-.155-.029-.305-.071-.45-.126-.38-.142-.568-.389-.568-.74V2.7c0-.14.04-.251.119-.328.092-.087.205-.15.327-.188.304-.096.62-.16.94-.187.33-.03.626-.045.888-.045zm9.807 1.404c-.426 0-.769.15-1.028.45-.26.3-.388.757-.388 1.37 0 .611.128 1.07.382 1.372.254.303.596.455 1.024.455.433 0 .778-.152 1.033-.455.254-.303.381-.76.381-1.373 0-.607-.125-1.062-.376-1.365-.252-.303-.593-.454-1.028-.454zm-9.689.03h-.294c-.1 0-.201.01-.304.03v3.516h.002c.194.033.39.048.588.05.234 0 .448-.031.646-.1.196-.068.365-.17.505-.311.14-.142.25-.325.33-.55.078-.225.12-.496.12-.81 0-.605-.147-1.06-.435-1.366-.288-.305-.676-.46-1.158-.46zm-5.78.274h-.061c-.097.282-.205.598-.327.945-.12.346-.229.699-.325 1.055h1.28c-.178-.669-.368-1.336-.567-2zm-6.433-.17c-.103 0-.187.003-.248.01-.069.007-.138.017-.206.03v1.515h.66c.263 0 .468-.066.62-.198.152-.132.227-.324.227-.58 0-.256-.084-.451-.253-.582-.169-.131-.435-.195-.8-.195z"></path><path fill="#FF1D13" d="M36.648 11.98l1.233 7.298h.393v2.042h-3.057v-2.042h.394v-.772h-1.419l-.012.772h.394v2.042H31.53v-2.042h.38l1.235-7.298h3.503zm-6.483.01l1.026.985v2.876h-2.376v-1.805l-.72-.014v5.244h.72v-1.819h2.376v2.864l-1.026.999h-3.398l-.999-.996v-7.348l.999-.984 3.398-.001zM16.9 11.98l1.234 7.298h.393v2.042h-3.07v-2.042h.408v-.772h-1.418l-.013.772h.393v2.042h-3.057v-2.042h.394l1.233-7.298h3.503zm-10.929.01l1.18 3.151 1.181-3.15h3.11v2.03h-.537v5.257h.538v2.042H8.109v-2.042h.539V15.99l-1.549 4.023-1.508-4.023v3.288h.537v2.042H2.756v-2.042h.537v-5.257h-.552v-2.03H5.97zm17.937.002l1.01.984v2.914l-.827.785.827.785v1.804h.54v2.055h-2.926v-3.723h-.71v1.668h.381v2.055h-3.32v-2.055h.524V14.01h-.524v-2.017h5.025zm10.982 2.391l-.472 2.888h.97l-.498-2.888zm-19.747 0l-.472 2.888h.97l-.498-2.888zm7.387-.374h-.72v2.132h.72v-2.132z"></path></g></svg>
+                  </span>
+                </button>
+                
+                <!-- ACCESS-BTN -->
+                <button class="navbar-toggler custom-toggler" style="padding-left: 5.5px; padding-right: 5.5px;" type="button">
+                  <span><img style="height: 25px; width: 25px; filter: invert(100%);" src="./public/ico/access.png" alt="acceder"></span>
+                  <p style="font-weight:200; color:white; font-size: small; margin-bottom: auto; margin-top: 3px;">Acceder</p>
+                </button>
+
+                <!-- MENU-BTN -->
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+                  <span class="navbar-toggler-icon custom-toggler"></span>
+                  <p style="font-weight:200; color:white; font-size: small; margin-bottom: auto;">Menú</p>
+              </button>
+            </div>
           </div>
-          <button class="navbar-toggler btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+        </nav><br><br><br>
+        <!-- Breadcrumb -->
+        <div class="notmobile">
+          <nav class="nav nav-pills nav-justified">
+            <a class="nav-item nav-link active bg-danger" style="font-size: small;" href="#">Noticias</a>
+            <a class="nav-item nav-link text-secondary text-muted" style="font-weight:bold; font-size: small;" href="#">Resultados</a>
+            <a class="nav-item nav-link text-secondary text-muted" style="font-weight:bold; font-size: small;" href="#">Última hora</a>
+          </nav>
+          <hr>
+        </div>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <!-- CARRUSEL DE PARTIDOS-->
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid d-flex">
+        <div class="container">
+            <div class="text-right notmobile" style="font-size: 12px; margin-bottom: -5px;">
+              <a href="" style="background-color: #ffffff75;">Ver todo &gt;</a>
+            </div>
+          <div class="carousell">          
+            <div>
+              <p class="text-left">
+                LIGA DE EXPANSION MX
+              </p>
+              <img src="./public/img/laLigaSantander.png">
+            </div>
+            <hr>
+            <div>
+              <p class="text-left">
+                LA LIGA SMARTBANK
+              </p>
+              <img src="./public/img/laLigaSmartbank.png">
+            </div>
+            <hr>
+            <div>
+              <p class="text-left">
+                BUNDES LIGA
+              </p>
+              <img src="./public/img/bundesLiga.png">
+            </div>
+            <hr>
+            <div>
+              <p class="text-left">
+                LIGUE 1
+              </p>
+              <img src="./public/img/ligue1.png">
+            </div>
+            <hr>
+            <div>
+              <p class="text-left">
+                PRIMEIRA LIGA PORTUGAL
+              </p>
+              <img src="./public/img/primeiraLigaPortugal.png">
+            </div>
+            <hr>
+            <div>
+              <p class="text-left">
+                EUROLIGA
+              </p>
+              <img src="./public/img/euroLiga1.png">
+            </div>
+            <div>
+              <img style="margin-top: 20px;" src="./public/img/euroLiga2.png">
+            </div>
+            <div>
+              <img style="margin-top: 20px;" src="./public/img/euroLiga3.png">
+            </div>
+            <div>
+              <img style="margin-top: 20px;" src="./public/img/euroLiga4.png">
+            </div>
+            <hr>
           </div>
-        </nav>
+          
+        </div>
+      </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
 
 
 
+
     <!-- Footer -->
-  <footer class="bg-dark text-center text-white">
-
-
-     <!-- Footer -->
-<!-- -->
     <footer class="text-center text-white" style="background-color:#282424;">
-
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        
-      </section>
-      <!-- Section: Social media -->
-  
-      <!-- Section: Form -->
+      <div class="container p-4 footer1">
       <section class="">
         <form action=""> 
           <!--Grid row-->
@@ -78,30 +171,19 @@
             <!--Grid column-->
             <div class="col-auto">
               <!-- Submit button -->
-             
             </div>
             <!--Grid column-->
           </div>
           <!--Grid row-->
         </form>
       </section>
-      <!-- Section: Form -->
-  
-      <!-- Section: Text -->
-      <section class="mb-4">
-        <p>
-          ___________________________________________________________________________________________________________________________________________________________
-        </p>
-      </section>
-      <!-- Section: Text -->
-  
-      <!-- Section: Links -->
+      <hr style="border-top: 1px solid white; margin-top: -5px;">
       <section class="">
         <!--Grid row-->
         <div class="row">
           <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Marca</h5>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left">
+            <h6 class="text-uppercase">Marca</h6>
   
             <ul class="list-unstyled mb-0">
               <li>
@@ -128,8 +210,8 @@
           <!--Grid column-->
   
           <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Ocio y Moda</h5>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left">
+            <h6 class="text-uppercase">Ocio y Moda</h6>
   
             <ul class="list-unstyled mb-0">
               <li>
@@ -158,8 +240,8 @@
           <!--Grid column-->
   
           <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Unidad editorial</h5>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left">
+            <h6 class="text-uppercase">Unidad editorial</h6>
   
             <ul class="list-unstyled mb-0">
               <li>
@@ -185,8 +267,8 @@
           <!--Grid column-->
   
           <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Formación y Empleo</h5>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left">
+            <h6 class="text-uppercase">Formación y Empleo</h6>
   
             <ul class="list-unstyled mb-0">
               <li>
@@ -205,13 +287,11 @@
         <!--Grid row-->
       </section>
       <!-- Section: Links -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: #eeeeee">
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #eeeeee">
     
-      <a class="text-dark">© Septiembre 2022 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</a>
+      <a class="text-dark"><strong>© Septiembre 2022 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</strong></a>
       <ul class="about-list"></ul>
         <li style="display: inline-block; padding-left: 25px;" > <a class="text-dark">Política de cookies</a></li>
         <li style="display: inline-block; padding-left: 25px;"> <a class="text-dark">Configuración de cookies</a>
@@ -225,9 +305,8 @@
         <li style="display: inline-block; padding-left: 25px;"> <a class="text-dark">Venta de contenidos</a></li>
         <li style="display: inline-block; padding-left: 25px;"> <a class="text-dark">Código ético</a></li>
     </ul>  
-    </div>
-    
-    <aside class="follow-us" style="text-align: center; background-color: #eeeeee;">
+      </div>
+      <aside class="follow-us" style="text-align: center; background-color: #eeeeee; padding-bottom: 30px;">
         <b class="text-dark">Síguenos en</b><br><br>
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style="background-color: #eeeeee;">
             <path fill="#1778f2"d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
@@ -242,9 +321,7 @@
             <path fill="#ee802f"d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z"/>
           </svg>
         </a>
-        </aside>
-
-        
+      </aside>
     </footer>
   <!-- Footer -->
 

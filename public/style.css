@@ -6,9 +6,27 @@ ul {
     list-style: none;
 }
 
+h6 {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .notmobile {
+        display: none;
+    }
+}
+
 .logo {
     background: #fff;
     width: 120px;
+    height: 100%;
+    display:inline-block;
     height: max-content;
     -webkit-transform: skewX(-10deg);
     -moz-transform: skewX(-10deg);
@@ -19,4 +37,48 @@ ul {
 
 .marca {
     margin-left: 7.5px;
+}
+
+.custom-toggler.navbar-toggler {
+    border:none;
+    filter:saturate(100%);
+    
+}
+
+.custom-toggler.navbar-toggler-icon {
+    width: 25px;
+    }
+
+.carousell {
+        display: flex;
+        overflow-y: auto;
+    }
+
+.carousell img {
+    width: 195px;
+    height: 100px;
+    margin-right: 5px;
+    display: block;
+}
+
+.carousell p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.carousell hr {
+    border: none;
+    border-left: 1px solid lightgray;
+    height: 115px;
+    width: 1px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 3px;
+    margin-right: 9px;
+}
+
+.jumbotron {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
